@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Política de Privacidade — Fiorote Finanças</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+    background: #0D1B2A;
+    color: #E2E8F0;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  header {
+    background: linear-gradient(135deg, #1A3A5C 0%, #0D1B2A 100%);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding: 28px 20px;
+    text-align: center;
+  }
+
+  .logo { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  .logo-icon {
+    width: 48px; height: 48px;
+    background: linear-gradient(135deg, #0F9F6E, #0C7A55);
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px;
+  }
+  .logo-text { font-size: 20px; font-weight: 900; color: #FFFFFF; letter-spacing: -0.5px; }
+  .logo-sub { font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.45); letter-spacing: 1.5px; text-transform: uppercase; }
+
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+  .badge {
+    display: inline-block;
+    background: rgba(15,159,110,0.15);
+    color: #0F9F6E;
+    font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase;
+    padding: 6px 14px; border-radius: 20px;
+    border: 1px solid rgba(15,159,110,0.3);
+    margin-bottom: 32px;
+  }
+
+  h1 { font-size: 32px; font-weight: 900; color: #FFFFFF; letter-spacing: -0.8px; margin-bottom: 8px; line-height: 1.2; }
+  .update-date { color: rgba(255,255,255,0.4); font-size: 13px; font-weight: 600; margin-bottom: 40px; }
+
+  section {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 28px;
+    margin-bottom: 16px;
+  }
+
+  h2 { font-size: 16px; font-weight: 900; color: #FFFFFF; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  h2 .num {
+    width: 28px; height: 28px;
+    background: rgba(15,159,110,0.15);
+    border-radius: 8px;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 13px; color: #0F9F6E; flex-shrink: 0;
+  }
+  h3 { font-size: 14px; font-weight: 800; color: rgba(255,255,255,0.8); margin: 18px 0 8px; }
+  p { font-size: 14px; color: rgba(255,255,255,0.6); margin-bottom: 10px; }
+
+  ul { list-style: none; padding: 0; margin: 0; }
+  ul li {
+    font-size: 14px; color: rgba(255,255,255,0.6);
+    padding: 6px 0 6px 20px; position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  ul li:last-child { border-bottom: none; }
+  ul li::before {
+    content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+    width: 7px; height: 7px; border-radius: 50%; background: #0F9F6E; opacity: 0.7;
+  }
+
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  th {
+    text-align: left; font-size: 11px; font-weight: 800; color: rgba(255,255,255,0.35);
+    letter-spacing: 0.8px; text-transform: uppercase; padding: 10px 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  td { font-size: 13px; color: rgba(255,255,255,0.6); padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); vertical-align: top; }
+  td:first-child { font-weight: 800; color: rgba(255,255,255,0.8); }
+  tr:last-child td { border-bottom: none; }
+
+  a { color: #0F9F6E; text-decoration: none; font-weight: 700; }
+  a:hover { text-decoration: underline; }
+
+  .highlight {
+    background: rgba(15,159,110,0.08);
+    border: 1px solid rgba(15,159,110,0.2);
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin: 14px 0;
+  }
+  .highlight p { color: rgba(255,255,255,0.7); margin: 0; font-weight: 600; }
+
+  .contact-card {
+    background: linear-gradient(135deg, rgba(15,159,110,0.12), rgba(15,159,110,0.05));
+    border: 1px solid rgba(15,159,110,0.25);
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-top: 8px;
+  }
+  .contact-card p { color: rgba(255,255,255,0.7); margin-bottom: 6px; font-weight: 600; }
+  .contact-card .email { font-size: 16px; font-weight: 900; color: #0F9F6E; }
+
+  footer {
+    text-align: center; padding: 30px 20px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    color: rgba(255,255,255,0.25); font-size: 12px; font-weight: 600;
+  }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 24px; }
+    section { padding: 20px 16px; }
+    table { font-size: 12px; }
+    td, th { padding: 8px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">💰</div>
+    <div>
+      <div class="logo-text">FIOROTE</div>
+      <div class="logo-sub">Finanças</div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="badge">Privacidade &amp; Segurança</div>
+  <h1>Política de Privacidade</h1>
+  <p class="update-date">Última atualização: 29 de julho de 2026</p>
+
+  <section>
+    <h2><span class="num">1</span> Informações gerais</h2>
+    <p>
+      O aplicativo <strong style="color:#fff">Fiorote Finanças</strong>, desenvolvido por
+      <strong style="color:#fff">Fiorote Aplicativos</strong>, é um app de controle financeiro pessoal
+      que roda <strong style="color:#fff">100% no seu aparelho</strong> — não existe servidor,
+      login ou conta associada a este app.
+    </p>
+    <p>Esta página descreve como o app lida com informações ao ser utilizado.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span> Não existe conta nem servidor</h2>
+    <div class="highlight">
+      <p>O app não pede cadastro, e-mail ou senha pra ser usado. Não temos nenhum servidor que armazene os seus dados financeiros.</p>
+    </div>
+    <p>
+      Todas as despesas, receitas e cartões que você cadastra ficam guardados apenas
+      no banco de dados local do seu aparelho (SQLite), dentro da área privada do app no Android.
+      Ninguém além de você — nem mesmo o desenvolvedor — tem acesso a esses dados.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span> Backup opcional no Google Drive</h2>
+    <p>
+      Se você optar por conectar sua conta do Google (opcional, em Configurações), o app pode salvar uma
+      cópia de segurança dos seus dados num arquivo chamado <code>fiorote-backup.json</code>,
+      enviado diretamente pro seu próprio Google Drive.
+    </p>
+    <ul>
+      <li>O app só pede a permissão <strong>drive.file</strong> do Google — acesso apenas aos arquivos que o próprio app cria, nunca ao resto do seu Drive</li>
+      <li>Esse arquivo de backup fica no seu Drive normal (não escondido) — você pode encontrá-lo, baixá-lo ou apagá-lo a qualquer momento em <a href="https://drive.google.com" target="_blank">drive.google.com</a></li>
+      <li>O desenvolvedor do app nunca vê, recebe ou armazena esse arquivo — a transferência é direta entre o seu aparelho e o Google</li>
+      <li>Usamos o e-mail e nome da conta conectada só para mostrar "conectado como ..." dentro do app</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span> Anúncios e assinatura</h2>
+    <p>O app exibe anúncios via <strong style="color:#fff">Google AdMob</strong> pra usuários sem assinatura ativa.</p>
+    <ul>
+      <li>O AdMob pode usar um identificador de publicidade do aparelho (Advertising ID) pra exibir anúncios</li>
+      <li>Pra usuários na União Europeia/Reino Unido, mostramos a tela de consentimento oficial do Google (UMP) antes de carregar qualquer anúncio</li>
+      <li>A assinatura "sem anúncios" é processada inteiramente pelo <strong>Google Play Billing</strong> — o app não vê nem armazena dados de pagamento/cartão</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span> Bloqueio por biometria</h2>
+    <p>
+      Se você ativar o bloqueio do app com digital ou reconhecimento facial, essa verificação é feita
+      inteiramente pelo sistema operacional do seu aparelho. O app nunca recebe, vê ou armazena seus
+      dados biométricos — apenas recebe um "sim" ou "não" de volta do Android.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">6</span> Dados que NÃO coletamos</h2>
+    <div class="highlight">
+      <p>✗ Localização geográfica &nbsp;&nbsp; ✗ Contatos do dispositivo &nbsp;&nbsp; ✗ Fotos ou arquivos pessoais &nbsp;&nbsp; ✗ Histórico de navegação</p>
+    </div>
+    <p>Não existe servidor próprio do app, então não há dado financeiro seu armazenado fora do seu aparelho e do seu próprio Google Drive (só quando você ativa o backup).</p>
+  </section>
+
+  <section>
+    <h2><span class="num">7</span> Terceiros envolvidos</h2>
+    <table>
+      <thead><tr><th>Serviço</th><th>Finalidade</th><th>Política</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Google Sign-In / Drive</td>
+          <td>Login opcional e backup de dados no seu próprio Drive</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank">Ver política</a></td>
+        </tr>
+        <tr>
+          <td>Google AdMob</td>
+          <td>Exibição de anúncios</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank">Ver política</a></td>
+        </tr>
+        <tr>
+          <td>Google Play Billing</td>
+          <td>Processamento da assinatura sem anúncios</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank">Ver política</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="num">8</span> Seus direitos e controle sobre os dados</h2>
+    <p>Como tudo fica no seu aparelho, você já tem controle total sobre seus dados:</p>
+    <ul>
+      <li><strong>Exportar</strong> — gere um arquivo de backup a qualquer momento em Configurações</li>
+      <li><strong>Apagar tudo</strong> — desinstalar o app remove todos os dados locais imediatamente</li>
+      <li><strong>Apagar o backup na nuvem</strong> — veja o passo a passo na <a href="../excluir-conta/">página de exclusão de dados</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">9</span> Público-alvo e menores de idade</h2>
+    <p>O Fiorote Finanças não é direcionado a crianças e não coleta intencionalmente dados de menores de idade.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">10</span> Alterações nesta política</h2>
+    <p>Podemos atualizar esta página periodicamente caso o funcionamento do app mude. A data no topo desta página sempre reflete a versão mais recente.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">11</span> Contato</h2>
+    <p>Dúvidas ou solicitações relacionadas à privacidade:</p>
+    <div class="contact-card">
+      <p>📧 E-mail para contato</p>
+      <p class="email">fioroteaplicativos@gmail.com</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Fiorote Aplicativos · Fiorote Finanças</p>
+  <p style="margin-top:6px;">Esta página é pública e serve como Política de Privacidade oficial do aplicativo.</p>
+</footer>
+
+</body>
+</html>
